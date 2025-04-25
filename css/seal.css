@@ -1,0 +1,33 @@
+/* seal.css */
+.seal-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seal-image img {
+    max-width: 336px; /* Sets the maximum width to approximately 3.5 inches */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.seal-description {
+    line-height: 1.6;
+}
+
+.seal-description h3 {
+    color: #069cdb; /* Using your primary color */
+    margin-top: 20px;
+}
+
+.seal-description ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.seal-description li {
+    margin-bottom: 10px;
+}

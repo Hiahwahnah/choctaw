@@ -1,0 +1,34 @@
+/* /css/culture.css */
+main section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+main h2 {
+    color: #069cdb; /* Using your primary color */
+    margin-bottom: 15px;
+}
+
+main h3 {
+    color: #915542; /* Using one of your secondary colors */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main li {
+    margin-bottom: 5px;
+}
+
+main p {
+    line-height: 1.6;
+}

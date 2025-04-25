@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Keeping a light background */
+    color: #333; /* Keeping a dark text color */
+}
+
+header {
+    background-color: #069cdb; /* Main color 1 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+header nav ul li a.active {
+    background-color: #0582ca; /* Slightly darker shade of main color 1 */
+}
+
+header nav ul li a:hover {
+    background-color: #0582ca; /* Slightly darker shade of main color 1 */
+}
+
+main {
+    background-color: white; /* Keeping a white main content background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2, h3 {
+    color: #069cdb; /* Main color 1 for headings */
+}
+
+.flashcard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.flashcard {
+    background-color: #fbcb05; /* Main color 2 for flashcard background */
+    border: 1px solid #e0ac04; /* Slightly darker shade of main color 2 for border */
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard .front,
+.flashcard .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #333; /* Ensuring text on cards is readable */
+}
+
+.flashcard .front {
+    background-color: #fbcb05; /* Main color 2 for front */
+    transform: rotateY(0deg);
+}
+
+.flashcard .back {
+    background-color: #ce2c2b; /* Secondary color 1 for back */
+    color: white; /* Ensuring readable text on the secondary color */
+    transform: rotateY(180deg);
+}
+
+.flashcard strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #915542; /* Secondary color 2 for strong text */
+}
+
+#translator label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #069cdb; /* Main color 1 for label */
+}
+
+#translator input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#translator button {
+    background-color: #097435; /* Secondary color 3 for button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#translator button:hover {
+    background-color: #075d2a; /* Slightly darker shade of secondary color 3 */
+}
+
+#translationOutput {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light background for output */
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333; /* Dark footer */
+    color: white;
+    border-radius: 4px;
+}
+
+.disclaimer {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 10px;
+}
